@@ -10,6 +10,7 @@ for l in ls:
     d, move = l[0], int(l[1:])
     dial = (dial + move) % 100 if d == "R" else (dial - move) % 100
     s += dial == 0
+    
 print(s)
 
 dial = 50
