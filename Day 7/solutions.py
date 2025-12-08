@@ -18,6 +18,7 @@ while q:
     nz = z + 1
     if nz in seen or nz not in grid:
         continue
+    
     seen.add(nz)
     if grid[nz] == "^":
         left = nz - 1j
